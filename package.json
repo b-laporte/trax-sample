@@ -1,0 +1,30 @@
+{
+    "name": "trax-sample",
+    "author": "Bertrand Laporte",
+    "copyright": "Bertrand Laporte",
+    "license": "MIT",
+    "keywords": [
+        "trax",
+        "demo"
+    ],
+    "scripts": {
+        "clean": "rimraf dist",
+        "test": "rollup --config test/rollup.config.js && mocha dist/test.specs.js --reporter dot"
+    },
+    "devDependencies": {
+        "@ivy-js/trax": "^1.0.0-alpha.3",
+        "@rollup/plugin-node-resolve": "7.1.3",
+        "@types/node": "^11.10.4",
+        "@types/mocha": "^5.2.6",
+        "mocha": "^6.0.2",
+        "rimraf": "3.0.2",
+        "rollup-plugin-typescript2": "^0.27.1",
+        "rollup": "2.3.2",
+        "rollup-plugin-terser": "5.3.0",
+        "rollup-pluginutils": "2.8.2"
+    },
+    "dependencies": {
+        "typescript": "3.8.3",
+        "tslib": "1.11.1"
+    }
+}
